@@ -17,7 +17,7 @@ Player::Player(int player)
 		body.addShapeCircle(b2Vec2(.0f, .5f), .5f);
 		body.type = PLAYER;
 
-		//Foot
+		//Foott
 		foot.createBody(b2Vec2(0.f,-.2f), 0.f);
 		foot.addShapeBox(.05f,.4f, 0.0f, .0f, 0.f, b2Vec2(0.f, .5f));
 		//Tip
