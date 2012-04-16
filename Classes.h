@@ -6,14 +6,13 @@
 
 enum type
 {
-	PLAYER, FOOT, FLOOR, BALL, WALL,
+	PLAYER, FOOT, FLOOR, BALL, WALL, GOAL, GOALSENSOR
 };
 
 class Player
 {
 private:
-	box::BoxBody body;
-	box::BoxBody foot;
+	
 	b2RevoluteJoint* footJoint;
 	bool b_left, b_right, b_up, b_action;
 	bool b_jump, b_jumping, b_inAir, b_direction;
@@ -22,6 +21,8 @@ private:
 	SDLKey left, right, up, action;
 
 public:
+	box::BoxBody body;
+	box::BoxBody foot;
 	Player(int player);
 
 	void handleInput();

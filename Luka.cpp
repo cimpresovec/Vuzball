@@ -885,7 +885,7 @@ namespace frm
 
 		float height = font->BBox(text.c_str()).Upper().Y() - font->BBox(text.c_str()).Lower().Y();
 
-		glRasterPos2f(x,y+height);
+		glRasterPos2f(x,y);//+height);
 
 		font->Render(text.c_str());
 
